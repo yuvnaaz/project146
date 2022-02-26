@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #000000">
+
+        <!--Camera-->
+        <a-entity position="0 0 15">
+            <a-camera></a-camera>
+        </a-entity>
+
+
+        <!--head-->
+        <a-entity>
+            <a-box position="0 -1 -5" width ="2" height ="2" color="orange"></a-box>
+        </a-entity>
+
+        <!--body-->
+        <a-entity>
+            <a-box position="0 -5 -5" width ="5" height ="6" color="yellow"></a-box>  
+        </a-entity>
+
+        <!--left leg-->
+        <a-entity>
+    <a-box position = "-1.5 -10 -5 " height = "3" color = " brown"> </a-box>
+    </a-entity>
+
+    <!--right leg-->
+    <a-entity>
+        <a-box position = "1.5 -10 -5 " height = "3" color = " brown"> </a-box>
+        </a-entity>
+
+        <!--LEFT arm-->
+        <a-entity rotation = "0 70 9">
+            <a-box position = "3 -3.5 -5 " width = "4" color = "orange"> </a-box>
+            </a-entity>
+             <!--RIGHT arm-->
+        <a-entity rotation = "0 -70 -9">
+            <a-box position = "-3 -3.4 -5 " width = "4" color = "orange"> </a-box>
+            </a-entity>
+            <!--eye-->
+            <a-sphere position = "-0.4 -0.4 -4" radius = ".3"></a-sphere>
+            <a-sphere position = "0.4 -0.4 -4" radius = ".3"></a-sphere>
+
+        <!--hands-->
+        <a-entity position = "0 0 0" rotation ="0 0 0"
+        animation = "property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 30000">
+    <a-sphere position ="5 0 -0" radius = "0.4" color = "blue">
+
+    </a-sphere>
+    </a-entity>
+       
+
+</a-sphere>
+</a-entity>
+
+</body>
+
+</html>
