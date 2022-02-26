@@ -38,21 +38,26 @@
         <a-entity rotation = "0 70 9">
             <a-box position = "3 -3.5 -5 " width = "4" color = "orange"> </a-box>
             </a-entity>
+
              <!--RIGHT arm-->
         <a-entity rotation = "0 -70 -9">
             <a-box position = "-3 -3.4 -5 " width = "4" color = "orange"> </a-box>
             </a-entity>
+
             <!--eye-->
-            <a-sphere position = "-0.4 -0.4 -4" radius = ".3"></a-sphere>
-            <a-sphere position = "0.4 -0.4 -4" radius = ".3"></a-sphere>
+            <a-entity>
+                <a-sphere position = "-0.4 -0.4 -4" radius = ".3"></a-sphere>
+                <a-sphere position = "0.4 -0.4 -4" radius = ".3"></a-sphere>
+            </a-entity>
+            
 
         <!--hands-->
-        <a-entity position = "0 0 0" rotation ="0 0 0"
-        animation = "property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 30000">
-    <a-sphere position ="5 0 -0" radius = "0.4" color = "blue">
-
-    </a-sphere>
-    </a-entity>
+        <a-entity position = "0 -0.5 -9" rotation ="0 0 0"
+        animation = "property: rotation; from: 0 0 0 ; to: 0 0 0; easing: easeInCirc; loop: true; dur: 30000">
+    <a-sphere position ="-3.8 -2.3 7" radius = "0.7"color = "blue"></a-sphere>
+    <a-sphere position ="3.8 -2.3 7" radius = "0.7"color = "blue"></a-sphere>
+   
+</a-entity>
        
 
 </a-sphere>
